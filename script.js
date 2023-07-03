@@ -6,7 +6,7 @@ canvas.height = window.innerHeight;
 let mouse = {
 	beforeX: undefined,
 	forceX: 0
-};
+}
 
 function getRandomInt(min, max) {
 	return Math.round(Math.random() * (max - min)) + min;
@@ -49,16 +49,16 @@ class Particle {
 
 class init {
   constructor() {
-    this.animate = this.animate.bind(this);
-    this.particles = [];
-    this.particleCount = 75;
+    	this.animate = this.animate.bind(this);
+    	this.particles = [];
+    	this.particleCount = 75;
 
 	this.resize();
-    this.animate();
+    	this.animate();
   }
 
   resize() {
-    canvas.width = window.innerWidth;
+    	canvas.width = window.innerWidth;
 	canvas.height = window.innerHeight;
 
 	ctx.fillRect(0, 0, canvas.width, canvas.height);
